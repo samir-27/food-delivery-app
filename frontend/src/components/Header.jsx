@@ -3,14 +3,14 @@ import food from "../assets/header.jpg"
 
 const Header = () => {
     return (
-        <div className="relative h-[500px] max-w-7xl lg:mx-auto sm:px-6 lg:px-8 px-12 rounded-3xl mt-10 mx-2 overflow-hidden">
+        <div className="relative h-[500px] max-w-7xl lg:mx-auto sm:px-6 lg:px-8 px-12  mt-10 mx-2 overflow-hidden">
             {/* Background Image */}
             <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center mx-4 rounded-3xl overflow-hidden"
                 style={{ backgroundImage: `url(${food})` }}
             >
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/55"></div>
+                <div className="absolute inset-0 bg-black/55 px-4 "></div>
             </div>
 
             {/* Content */}
