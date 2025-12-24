@@ -21,3 +21,8 @@ a{
   font-family: "Quicksand", sans-serif;
 }
 
+
+@theme {
+  --breakpoint-s: 25rem;
+}
+
