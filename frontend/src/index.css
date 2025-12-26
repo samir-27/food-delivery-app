@@ -9,6 +9,17 @@ a{
   color: inherit;
 }
 
+.cart-dot {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+
 
 .rubik {
   font-family: "Rubik", sans-serif;
