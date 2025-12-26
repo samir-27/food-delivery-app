@@ -3,12 +3,12 @@ import { IoFastFoodSharp, IoSearchCircle } from "react-icons/io5";
 import { SlBasket } from "react-icons/sl";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <nav className="bg-white w-full quicksand">
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-12">
+            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-8">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo */}
                     <div className="flex items-center gap-2 text-orange-600">
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div className="flex items-center gap-4">
                         <IoSearchCircle size="40" className="text-orange-600 cursor-pointer" />
                         <SlBasket size={28} className="text-orange-600 cursor-pointer" />
-                        <button className="border-orange-600 border-2 font-bold text-orange-600 hover:bg-orange-600 hover:text-white px-3 py-2 rounded-full">
+                        <button className="sm:text-lg text-sm border-orange-600 border-2 font-bold text-orange-600 hover:bg-orange-600 hover:text-white px-0 sm:px-3 py-2 rounded-full" onClick={()=>setShowLogin(true)}>
                             sign in
                         </button>
                         {/* Hamburger for mobile */}
