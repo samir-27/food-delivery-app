@@ -37,7 +37,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5",
     price: 99,
     description: "Crispy golden french fries.",
-    category: "Snacks",
+    category: "Rolls",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const food_list = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XxYa6wIywsHXeJpzJAF0fp66ovY8OTLBfw&s",
     price: 149,
     description: "Crunchy nuggets served hot.",
-    category: "Snacks",
+    category: "Rolls",
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1633945274309-2c16c9682a8c",
     price: 299,
     description: "Aromatic rice with spiced chicken.",
-    category: "Rice",
+    category: "North Indian",
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
     price: 259,
     description: "Flavorful vegetable biryani.",
-    category: "Rice",
+    category: "North Indian",
   },
   {
     id: 11,
@@ -149,7 +149,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1668236543090-82d9c0f1cdd0",
     price: 249,
     description: "Grilled paneer with spices.",
-    category: "Starter",
+    category: "North Indian",
   },
   {
     id: 20,
@@ -157,7 +157,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398",
     price: 299,
     description: "Spicy grilled chicken tikka.",
-    category: "Starter",
+    category: "North Indian",
   },
   {
     id: 21,
@@ -165,7 +165,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1601050690597-df0568f70950",
     price: 49,
     description: "Soft naan topped with butter.",
-    category: "Bread",
+    category: "North Indian",
   },
   {
     id: 22,
@@ -173,7 +173,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1626074353765-517a681e40be",
     price: 59,
     description: "Naan infused with garlic flavor.",
-    category: "Bread",
+    category: "North Indian",
   },
   {
     id: 23,
@@ -181,7 +181,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84",
     price: 299,
     description: "Complete Indian veg meal.",
-    category: "Thali",
+    category: "North Indian",
   },
   {
     id: 24,
@@ -189,7 +189,7 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1626776876766-47d0c47b25b9",
     price: 349,
     description: "Traditional chicken thali.",
-    category: "Thali",
+    category: "North Indian",
   },
   {
     id: 25,
@@ -197,6 +197,30 @@ export const food_list = [
     image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f",
     price: 139,
     description: "Vanilla sundae with chocolate syrup.",
-    category: "Dessert",
+    category: "Ice Cream",
   },
+  {
+  id: 26,
+  name: "Masala Dosa",
+  image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+  price: 179,
+  description: "Crispy dosa filled with spiced potato masala.",
+  category: "South Indian",
+},
+{
+  id: 27,
+  name: "Idli Sambar",
+  image: "https://images.unsplash.com/photo-1630383249896-424e482df921",
+  price: 129,
+  description: "Soft idlis served with hot sambar and chutney.",
+  category: "South Indian",
+},
+{
+  id: 28,
+  name: "Medu Vada",
+  image: "https://images.unsplash.com/photo-1666001126043-4b5d4798365a",
+  price: 139,
+  description: "Crispy lentil vadas with coconut chutney.",
+  category: "South Indian",
+},
 ];
