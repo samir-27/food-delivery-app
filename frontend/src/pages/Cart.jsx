@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../context/StoreContext";
 import { MdDelete } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, food_list, removeFromCart, getTotalCartAmount } =
@@ -9,6 +10,8 @@ const Cart = () => {
   const cartFood = food_list.filter(
     (item) => cartItems[item.id] > 0
   );
+
+  const navigate = useNavigate();
 
 
   return (
@@ -74,7 +77,7 @@ const Cart = () => {
 
               <div className="flex justify-between text-base sm:text-lg font-semibold mb-4">
                 <span>Delivery Fee</span>
-                <span className="text-orange-600">₹ {2}</span>
+                <span className="text-orange-600">₹ {150}</span>
               </div>
 
               <hr className="my-3" />
@@ -84,7 +87,7 @@ const Cart = () => {
                 <span className="text-orange-600">₹ {getTotalCartAmount() + 2}</span>
               </div>
 
-              <button className="w-full bg-green-600 text-white py-3 rounded-full hover:bg-green-700 transition">
+              <button onClick={()=> navigate('/order')} className="w-full bg-green-600 text-white py-3 rounded-full hover:bg-green-700 transition">
                 Proceed to Checkout
               </button>
             </div>
