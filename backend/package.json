@@ -4,8 +4,8 @@
   "description": "",
   "license": "ISC",
   "author": "samir",
-  "type": "commonjs",
-  "main": "sever.js",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
     "server" : "nodemon server.js"
   },
