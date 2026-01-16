@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import {connectDB} from  './config/db.js';
+import foodRouter from './routes/foodRoute.js';
 
 //app config 
 const app = express()
@@ -15,6 +16,9 @@ app.use(cors());
 
 //db connection
 connectDB();
+
+//api routes
+app.use("/api/food", foodRouter);
 
 app.get("/", (req, res) => {
     res.send("Hello from backend server");
