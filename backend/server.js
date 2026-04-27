@@ -4,7 +4,9 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import {connectDB} from  './config/db.js';
+console.log("Before importing foodRouter");
 import foodRouter from './routes/foodRoute.js';
+console.log("After importing foodRouter");
 
 //app config 
 const app = express()
@@ -19,6 +21,8 @@ connectDB();
 
 //api routes
 app.use("/api/food", foodRouter);
+console.log("Food routes registered");
+app.use("/images", express.static("uploads"));
 
 app.get("/", (req, res) => {
     res.send("Hello from backend server");
